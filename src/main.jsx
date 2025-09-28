@@ -1,0 +1,30 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import "./index.css";
+
+import HomePage from "./pages/home/index.jsx";
+//import PeoplePage from "./pages/people/index.jsx";
+
+import CommunistPage from "./pages/communist/index.jsx";
+import ConclusionPage from "./pages/conclusion/index.jsx";
+import Header from "./components/layout/header.jsx";
+import AIPage from "./pages/ai/index.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        {/* Home */}
+        <Route path="/" element={<HomePage />} />
+        <Route path="/trang-chu" element={<HomePage />} />
+
+        {/* Nội dung chính */}
+        <Route path="/qua-trinh-ra-doi" element={<CommunistPage />} />
+        <Route path="/ai-chatbot" element={<AIPage />} />
+        <Route path="/ket-luan" element={<ConclusionPage />} />
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);
