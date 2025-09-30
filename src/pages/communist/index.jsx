@@ -71,9 +71,9 @@ const CommunistPage = () => {
             <div className="flex flex-col items-center gap-3 md:gap-5 max-w-sm md:max-w-none">
               <img
                 src="/images/communist/3.png"
-                className="w-full h-auto max-w-xs md:max-w-sm"
+                className="w-full max-h-[536px] max-w-xs md:max-w-sm"
               />
-              <p className="text-sm md:text-base text-center italic px-2">
+              <p className="text-sm md:text-base text-center italic px-2 max-w-[480px]">
                 (Tác phẩm "Tắt Đèn" - do Ngô Tất Tố viết nhằm vạch trần cảnh sưu
                 cao thuế nặng, người nông dân khổ cực)
               </p>
@@ -82,9 +82,9 @@ const CommunistPage = () => {
             <div className="flex flex-col items-center gap-3 md:gap-5 max-w-sm md:max-w-none">
               <img
                 src="/images/communist/4.png"
-                className="w-full h-auto max-w-xs md:max-w-sm"
+                className="w-full max-h-[536px] max-w-xs md:max-w-sm"
               />
-              <p className="text-sm md:text-base text-center italic px-2">
+              <p className="text-sm md:text-base text-center italic px-2 max-w-[480px]">
                 (Tác phẩm "Bước Đường Cùng" - của Nguyễn Công Hoan phản ánh cảnh
                 nông dân bị sưu cao thuế nặng, phải bán cả ruộng đất, cuối cùng
                 bị dồn vào chỗ chết.)
@@ -191,11 +191,10 @@ const CommunistPage = () => {
 
           <img
             src="/images/communist/9.png"
-            className="w-full max-w-md md:max-w-lg h-auto"
+            className="w-full max-w-6xl h-auto"
           />
 
           <div className="w-full flex items-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-grenze text-[#5D0404] mt-6 md:mt-10 justify-center">
-            <ArrowRight size={20} className="sm:w-6 sm:h-6 md:w-8 md:h-8" />
             <p className="p-0 m-0 ml-2 text-center">
               Dẫn tới quyết định Ra Đi Tìm Đường Cứu Nước
             </p>
@@ -235,64 +234,6 @@ const CommunistPage = () => {
         </div>
       </div>
 
-      {/* Phần 2: Sự Trải Nghiệm và Giác Ngộ của Nguyễn Ái Quốc */}
-      <div className="w-full max-w-7xl px-3 md:px-7 gap-6 md:gap-10 mt-12 md:mt-20">
-        <p className="font-bungee text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-6">
-          2. Sự Trải Nghiệm và Giác Ngộ của Nguyễn Ái Quốc
-        </p>
-
-        <div className="w-full flex flex-col items-center justify-center gap-6 md:gap-10">
-          <p className="font-grenze text-lg sm:text-xl md:text-2xl lg:text-3xl text-center leading-relaxed">
-            Năm 1911, khi mới 21 tuổi, người xin làm phụ bếp trên con tàu Đô đốc
-            Amiral Latouche-Tréville để rời bến Nhà Rồng. Từ đó có điều kiện
-            thực hiện hành trình bôn ba suốt 10 năm ròng vượt qua 3 Đại Dương,
-            tới 4 Châu Lục (Âu - Á - Phi - Mỹ) và khoảng 30 Quốc Gia.
-          </p>
-
-          <div className="w-full flex flex-col items-center gap-4 md:gap-5">
-            <img
-              src="/images/communist/11.png"
-              className="w-full max-w-lg h-auto"
-            />
-            <p className="text-sm md:text-base text-center italic px-2">
-              (Bàn chân của người thanh niên yêu nước Nguyễn Tất Thành đã in dấu
-              trên nhiều nước thuộc các đại lục Âu, Á, Phi, Mỹ.)
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full flex flex-col md:flex-row justify-center md:justify-between items-center mt-6 md:mt-10 gap-6 md:gap-8">
-          <img
-            src="/images/communist/12.png"
-            className="w-full max-w-xs md:max-w-sm h-auto"
-          />
-          <div className="w-full md:w-1/2 flex flex-col text-center md:text-start">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-grenze italic leading-relaxed">
-              Người làm nhiều nghề để sống, tận mức chứng kiến đời sống khổ cực
-              của nhân dân lao động từ các nước thuộc địa cho đến những quốc gia
-              phát triển nhất của Đế Quốc Tư Bản thời bấy giờ như Mỹ - Anh -
-              Pháp.
-            </p>
-            <p className="text-sm md:text-base text-center md:text-start italic mt-2">
-              (Hình ảnh người thanh niên Nguyễn Tất Thành làm phụ bếp trên tàu
-              Đô Đốc Latouche-Tréville)
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full flex items-center mt-6 md:mt-10">
-          <p className="font-grenze text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-center leading-relaxed">
-            <strong>Người kết luận:</strong> "Ở đâu bọn Đế Quốc Thực Dân cũng
-            tàn bạo độc ác, ở đâu những người lao động cũng bị bóc lột áp bức
-            nặng nề và dù màu da có khác nhau trên đời này chỉ có 2 giống người.
-            Giống người bóc lột và giống người bị bóc lột"
-          </p>
-        </div>
-
-        {/* Continue with remaining sections following the same responsive pattern... */}
-        {/* For brevity, I'll show the pattern but the full implementation would continue */}
-      </div>
-
       {/* Phần 2:  */}
       <div className="w-full max-w-7xl px-3 md:px-7 gap-6 md:gap-10 mt-12 md:mt-20">
         {/* Title */}
@@ -321,7 +262,7 @@ const CommunistPage = () => {
           </div>
         </div>
 
-        <div className="w-full md:flex md:justify-between md:items-center sm:flex sm:flex-col sm:items-center mt-6 md:mt-10 px-6 md:px-20">
+        <div className="w-full flex justify-between flex-col items-center sm:flex sm:flex-col sm:items-center mt-6 md:mt-10 px-6 md:px-20">
           <img
             src="/images/communist/12.png"
             className="w-full max-w-xs md:max-w-sm h-auto"
@@ -425,8 +366,8 @@ const CommunistPage = () => {
           </p>
         </div>
 
-        <div className="w-full px-6 md:px-10 md:flex md:justify-between md:items-center mt-6 md:mt-10 sm:flex sm:flex-col sm:items-center">
-          <p className="font-grenze text-lg sm:text-xl md:text-2xl lg:text-3xl md:w-[607px] sm:w-full">
+        <div className="w-full px-6 md:px-10 md:flex md:justify-between md:items-center mt-6 md:mt-10 sm:flex sm:flex-col sm:items-center gap-5">
+          <p className="font-grenze text-lg sm:text-xl md:text-2xl lg:text-3xl w-full text-center">
             Mark đã xây dựng học thuyết của mình trên 1 triết lý nhất định của
             lịch sử Châu Âu, mà Châu Âu chưa phải{" "}
             <strong>TOÀN BỘ NHÂN LOẠI</strong>.
@@ -437,10 +378,10 @@ const CommunistPage = () => {
           />
         </div>
 
-        <div className="w-full mt-6 md:mt-10">
+        <div className="w-full flex items-center justify-center mt-6 md:mt-10">
           <img
             src="/images/communist/17.png"
-            className="w-full max-w-2xl h-auto"
+            className="w-full max-w-6xl h-auto"
           />
         </div>
       </div>

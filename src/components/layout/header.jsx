@@ -95,6 +95,7 @@ export default function Header() {
               label:
                 "Quá trình ra đời và phát triển của Đảng Cộng Sản Việt Nam",
             },
+            { href: "/van-dung", label: "Vận Dụng Tư Tưởng Hồ Chí Minh" },
             // {
             //   href: "/dang-ngay-nay",
             //   label: "Đảng và Nhà nước ta hiện nay",
@@ -103,7 +104,6 @@ export default function Header() {
               href: "/ai-chatbot",
               label: "Trò Chuyện Cùng AI",
             },
-            { href: "/ket-luan", label: "Kết luận" },
           ].map((item, i) => (
             <p
               key={item.href}

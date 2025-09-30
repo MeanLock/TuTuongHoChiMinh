@@ -122,7 +122,7 @@ const HomePage = () => {
 
         // FRAME 3 ANIMATIONS - ENTER
         // Set initial states cho frame 3
-        gsap.set("#nav_1, #nav_2", { x: -innerWidth, opacity: 0 });
+        gsap.set("#nav_1, #nav_2, #nav_3", { x: -innerWidth, opacity: 0 });
         gsap.set("#model", { opacity: 0 });
         gsap.set("#description", { y: 150, opacity: 0 });
         gsap.set("#white_section", {
@@ -171,16 +171,16 @@ const HomePage = () => {
             },
             0.7
           )
-          // .to(
-          //   "#nav_3",
-          //   {
-          //     x: 0,
-          //     opacity: 1,
-          //     duration: 1.5,
-          //     ease: "back.out(1.2)",
-          //   },
-          //   0.9
-          // )
+          .to(
+            "#nav_3",
+            {
+              x: 0,
+              opacity: 1,
+              duration: 1.5,
+              ease: "back.out(1.2)",
+            },
+            0.9
+          )
           .to(
             "#model",
             {
@@ -237,7 +237,7 @@ const HomePage = () => {
           </div>
           <div className="w-full flex items-center justify-center text-red-600">
             <p className="font-bungee text-center text-3xl text-yellow-500">
-              Về đảng cộng sản việt nam & nhà nước của dân, do dân và vì dân
+              Về đảng cộng sản việt nam
             </p>
           </div>
         </div>
@@ -342,27 +342,27 @@ const HomePage = () => {
             </span>
           </div>
           <div
-            onClick={() => navigate("/ai-chatbot")}
+            onClick={() => navigate("/van-dung")}
             id="nav_2"
             className="bg-red-800 hover:bg-red-500 cursor-pointer text-white px-6 py-3 rounded-full flex items-center gap-3 min-w-96"
           >
             <div className="bg-yellow-500 text-black rounded-full w-8 h-8 flex items-center justify-center font-bold">
               2
             </div>
-            <span className="font-bold text-sm">TRÒ CHUYỆN CÙNG AI</span>
+            <span className="font-bold text-sm">
+              VẬN DỤNG TƯ TƯỞNG HỒ CHÍ MINH NGÀY NAY
+            </span>
           </div>
-          {/* <div
-            onClick={() => navigate("/ung-dung-thuc-te")}
+          <div
+            onClick={() => navigate("/ai-chatbot")}
             id="nav_3"
             className="bg-red-800 hover:bg-red-500 cursor-pointer text-white px-6 py-3 rounded-full flex items-center gap-3 min-w-96"
           >
             <div className="bg-yellow-500 text-black rounded-full w-8 h-8 flex items-center justify-center font-bold">
               3
             </div>
-            <span className="font-bold text-sm">
-              VẬN DỤNG TƯ TƯỞNG HỒ CHÍ MINH HIỆN NAY
-            </span>
-          </div> */}
+            <span className="font-bold text-sm">TRÒ CHUYỆN CÙNG AI</span>
+          </div>
         </div>
 
         {/* 3D Model - positioned on the left */}

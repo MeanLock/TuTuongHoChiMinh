@@ -1,0 +1,48 @@
+#ai_page {
+  background-image: url("/background/bgCommunist.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#chat_content {
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-gutter: stable; /* tránh nhảy layout khi hiện scrollbar */
+  overscroll-behavior: contain; /* không cuộn lố sang body */
+  -webkit-overflow-scrolling: touch; /* mượt trên iOS */
+}
+
+/* Firefox */
+#chat_content {
+  scrollbar-width: thin; /* mảnh */
+  scrollbar-color: rgba(0, 0, 0, 0.7) transparent; /* tay nắm đen, track trong suốt */
+}
+
+/* Chrome, Edge, Safari */
+#chat_content::-webkit-scrollbar {
+  width: 6px; /* độ dày thanh dọc */
+  height: 6px; /* nếu có thanh ngang */
+}
+
+#chat_content::-webkit-scrollbar-track {
+  background: transparent; /* track trong suốt */
+}
+
+#chat_content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.75); /* đen vừa */
+  border-radius: 9999px; /* bo tròn */
+  border: 2px solid transparent; /* tạo cảm giác mảnh hơn */
+  background-clip: content-box;
+}
+
+#chat_content::-webkit-scrollbar-thumb:hover {
+  background-color: #000; /* đậm hơn khi hover */
+}
+
+#chat_content::-webkit-scrollbar-corner {
+  background: transparent;
+}
