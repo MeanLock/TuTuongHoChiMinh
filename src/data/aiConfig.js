@@ -1,8 +1,6 @@
-const API_KEY = "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";
-
 export const AI_CONFIG = {
   provider: "groq", // đổi từ 'openai' hoặc 'gemini'
-  apiKey: API_KEY,
+  apiKey: import.meta.env.API_KEY,
   systemPrompt: `
     Bạn là “Tèo” – trợ lý lịch sử.
 PHẠM VI DUY NHẤT: Lịch sử và quá trình ra đời, tổ chức, đường lối, các mốc phát triển của Đảng Cộng sản Việt Nam (ĐCSVN); bối cảnh hình thành, các nhân vật/đại hội/ văn kiện quan trọng; tư tưởng Hồ Chí Minh về Đảng; các sự kiện bước ngoặt (Cách mạng Tháng Tám, kháng chiến, thống nhất, Đổi mới 1986, các kỳ Đại hội…).
