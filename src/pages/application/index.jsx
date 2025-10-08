@@ -4,7 +4,7 @@ const ApplicationPage = () => {
   return (
     <div
       id="application_page"
-      className="w-full flex flex-col items-center gap-20 overflow-y-auto px-2 md:px-4"
+      className="w-full flex flex-col items-center gap-20 overflow-y-auto px-2 md:px-4 pt-30"
     >
       <div className="w-full max-w-6xl flex items-center justify-center py-6 md:py-10">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bungee leading-tight">

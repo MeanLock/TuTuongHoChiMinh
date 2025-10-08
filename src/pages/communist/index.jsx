@@ -15,7 +15,7 @@ const CommunistPage = () => {
   return (
     <div
       id="communist_page"
-      className="w-full flex flex-col items-center gap-4 md:gap-6 overflow-y-auto px-2 md:px-4"
+      className="w-full flex flex-col items-center gap-4 md:gap-6 overflow-y-auto px-2 md:px-4 pt-30"
     >
       <div className="w-full max-w-6xl flex items-center justify-center py-6 md:py-10">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bungee leading-tight">
@@ -701,7 +701,7 @@ const CommunistPage = () => {
 
           <p className="font-grenze text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-center leading-relaxed">
             Sau Hội nghị thành lập Đảng Cộng sản Việt Nam - với sự đồng ý của
-            Nguyễn Ái Quốc, ngày 14/02/1930 tại Sài Gòn Ban chấp hành Lâm thời
+            Nguyễn Ái Quốc, ngày 24/02/1930 tại Sài Gòn Ban chấp hành Lâm thời
             của Đảng đã họp và quyết định chấp nhận Đông Dương Cộng sản Liên
             đoàn gia nhập Đảng Cộng Sản Việt Nam.
           </p>

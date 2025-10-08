@@ -10,6 +10,8 @@ import CommunistPage from "./pages/communist/index.jsx";
 import ApplicationPage from "./pages/application/index.jsx";
 import Header from "./components/layout/header.jsx";
 import AIPage from "./pages/ai/index.jsx";
+import AiUsagePage from "./pages/ai-usage/index.jsx";
+import InformationsPage from "./pages/informations/index.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -24,6 +26,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/qua-trinh-ra-doi" element={<CommunistPage />} />
         <Route path="/ai-chatbot" element={<AIPage />} />
         <Route path="/van-dung" element={<ApplicationPage />} />
+        <Route path="/ai-usage" element={<AiUsagePage />} />
+        <Route path="/informations" element={<InformationsPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
